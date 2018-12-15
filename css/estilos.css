@@ -1,0 +1,71 @@
+@font-face {
+  font-family: poke;
+  src: url("../txt/Pokemon.ttf"); }
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: poke;
+  color: #ebdb00;
+  text-shadow: 0 0 20px #00379e; }
+
+h1 {
+  font-size: 50px;
+  font-family: poke;
+  color: #ebdb00;
+  text-shadow: 0 0 20px #00379e; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-image: url("../img/fondo.png");
+  background-size: cover; }
+
+table {
+  border-collapse: collapse; }
+
+tr td {
+  padding: 10px; }
+
+tr td img {
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  border: solid #004594 2px; }
+
+.voltear {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.contenedor {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  z-index: 1; }
+
+.carta {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.aux {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.cara {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.cara.atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
